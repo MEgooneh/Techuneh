@@ -1,3 +1,39 @@
-site_name: Techuneh/تکانه
+site_name: تکانه
+site_url: https://techuneh.megagon.ir
+site_description: وبلاگ فنی متن‌باز
+repo_url: https://github.com/megooneh/techuneh
+
+copyright: |
+    مطالب تحت پروانه 
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" style="color: #4ab6f1">CC0</a>
+    در دسترس است.
 theme: 
     name: material
+    language: fa
+    font:
+        text: Vazirmatn
+        code: Source Code Pro
+    palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: تم روشن
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: تم تیره
+    features:
+        - content.code.copy
+        - navigation.tabs
+        - navigation.instant.progress
+
+nav:
+  - index.md
+  - طراحی سیستم: systemdesign/
+  - لینوکس: linux/
+
+plugins:
+  - search
+
